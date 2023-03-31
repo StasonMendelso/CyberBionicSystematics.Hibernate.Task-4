@@ -1,4 +1,4 @@
-package org.stanislav;
+package org.stanislav.task7;
 
 /**
  * Hello world!

@@ -81,26 +81,17 @@ some additional dependencies.
 For running the database you can use as me MySQL Server or create your own database on another SQL server (**not
 recommended**).
 
-[//]: # (For configuring the connection to the database you should change)
+For configuring the connection to the database you should change
+the [Hibernate configuration properties file](src/main/resources/hibernate-task6.cfg.xml.origin) for the task 6. You can see, that this file
+has suffix **.origin**. For enable this file for configurating Hibernate you need remove this suffix and get the next
+filename:
+*hibernate.cfg.xml*. You need only insert your username, password and a name of the database.
 
-[//]: # (the [Hibernate configuration properties file]&#40;src/main/resources/hibernate.cfg.xml.origin&#41;. You can see, that this file)
-
-[//]: # (has suffix **.origin**. For enable this file for configurating Hibernate you need remove this suffix and get the next)
-
-[//]: # (filename:)
-
-[//]: # (*hibernate.cfg.xml*. You need only insert your username, password and a name of the database.)
-
-[//]: # ()
-[//]: # (**Note**: if you use another server not such MySQL)
-
-[//]: # (you should change JDBC driver for working with it and configurate the connection to your server in)
-
-[//]: # (properly [Hibernate configuration properties]&#40;src/main/resources/hibernate.cfg.xml.origin&#41; by changing)
-
-[//]: # (configuration of driver name at least. **Also**, for changing the JDBC driver you should change the dependency)
-
-[//]: # (in the [pom.xml file]&#40;pom.xml&#41; and the name of the driver in the configuration class.)
+**Note**: if you use another server not such MySQL
+you should change JDBC driver for working with it and configurate the connection to your server in
+properly [Hibernate configuration properties](src/main/resources/hibernate.cfg.xml.origin) by changing
+configuration of driver name at least. **Also**, for changing the JDBC driver you should change the dependency
+in the [pom.xml file](pom.xml) and the name of the driver in the configuration class.
 
 ## Built With
 
